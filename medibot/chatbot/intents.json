@@ -37,13 +37,48 @@
         {
             "tag":"name",
             "patterns": ["what is your name","what should i call you","what's your name?","who are you?","can you tell me your name"],
-            "responses":["you can call me Medbot!","i am Medbot!","i am Medbot your medical assistant"]
+            "responses":["you can call me Medbot!","i am Medbot!","i am Medbot your medical assistant."]
         },
         {
             "tag": "do",
             "patterns": ["what can you do for me","what is your work","what is your purpose","how can you help me","what can you help me do"],
-            "responses": ["my work here is quite simple and structered. I offer services like:"]
+            "responses": ["my work here is quite simple and structured. I offer services like."]
         },
+        {
+      "tag": "common cold",
+      "patterns": ["I have a cold", "Cold symptoms", "What to do for a cold"],
+      "responses": ["I'm sorry to hear that. Rest, stay hydrated, and consider over-the-counter cold medications. If symptoms persist, consult a healthcare professional."]
+    },
+    {
+      "tag": "flu",
+      "patterns": ["Flu symptoms", "I think I have the flu", "How to treat flu"],
+      "responses": ["It's important to rest, drink fluids, and take over-the-counter flu medications. If symptoms persist or worsen, consult a healthcare professional."]
+    },
+    {
+      "tag": "fever",
+      "patterns": ["High temperature", "Fever remedies", "What to do for a fever"],
+      "responses": ["For fever, stay hydrated, rest, and take over-the-counter fever reducers. If the fever persists, consult a healthcare professional."]
+    },
+    {
+      "tag": "headache",
+      "patterns": ["I have a headache", "Headache relief", "Severe headache"],
+      "responses": ["For headaches, ensure you're hydrated, rest, and consider over-the-counter pain relievers. If the headache persists, consult a healthcare professional."]
+    },
+    {
+      "tag": "stomachache",
+      "patterns": ["Stomachache", "Upset stomach", "Abdominal pain"],
+      "responses": ["For stomachaches, try bland foods, avoid spicy or fatty foods, and consider over-the-counter remedies. If the pain persists, consult a healthcare professional."]
+    },
+    {
+      "tag": "symptom_check",
+      "patterns": ["What could these symptoms mean?", "Should I see a doctor?", "Symptom advice"],
+      "responses": ["I'm not a doctor, but persistent or severe symptoms may require professional attention. It's advisable to consult with a healthcare professional for personalized advice."]
+    },
+    {
+      "tag": "unknown",
+      "patterns": ["I don't know", "Not sure", "Can't say"],
+      "responses": ["That's okay! If you have any health concerns, it's always best to consult with a healthcare professional."]
+    },
         {   
             "tag": "corona",
             "patterns": ["what's corona","what is corona virus","describe corona","covid","corona","what is covid"],
@@ -115,16 +150,7 @@
             "responses":["Consult doctor and check the stage of sinus"]
         },
         {
-            "tag":"common cold symptoms",
-            "patterns": ["Runny or stuffy nose",
-            "Sore throat",
-            "Cough",
-            "Congestion",
-            "Slight body aches or a mild headache",
-            "Sneezing",
-            "Low-grade fever",
-            "Generally feeling unwell","what are cold symptoms","symptoms of cold"],
-            "responses":["It seems that you are suffering from common cold"]
+            
         },
         {
             "tag":"fever symptoms",
@@ -229,108 +255,107 @@
                 "can you give me some suggestions for doctor consultations?","can you set up a meeting with a doctor for consultation?","is there any doctor available for consultation"],
             "responses":["You can contact various doctors here for any kind of consultation: 1. https://www.1mg.com/online-doctor-consultation, 2. https://www.tatahealth.com/online-doctor-consultation/general-physician, 3. https://www.doconline.com/, or you can pay a visit to your local area doctor or family doctor."]
         },
-    
-    {"tag": "Cuts",
-     "patterns": ["What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts"],
-     "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
-     "context_set": ""
-    },
+        {"tag": "Cuts",
+        "patterns": ["What to do if Cuts?", "How to cure Cuts?", "Which medicine to apply for Cuts?", "what to apply on cuts?", "Cuts"],
+        "responses": ["Wash the cut properly to prevent infection and stop the bleeding by applying pressure for 1-2minutes until bleeding stops. Apply Petroleum Jelly to make sure that the wound is moist for quick healing. Finally cover the cut with a sterile bandage. Pain relievers such as acetaminophen can be applied."],
+        "context_set": ""
+        },
 
-    {"tag": "Abrasions",
+     {"tag": "Abrasions",
      "patterns": ["how do you treat abrasions?", "Do Abrasions cause scars?", "Abrasions", "what to do if abrasions?", "Which medicine to apply for abrasions?", "How to cure abrasions?"],
      "responses": ["Begin with washed hands.Gently clean the area with cool to lukewarm water and mild soap. Remove dirt or other particles from the wound using sterilized tweezers.For a mild scrape that’s not bleeding, leave the wound uncovered.If the wound is bleeding, use a clean cloth or bandage, and apply gentle pressure to the area to stop any bleeding.Cover a wound that bled with a thin layer of topical antibiotic ointment, like Bacitracin, or a sterile moisture barrier ointment, like Aquaphor. Cover it with a clean bandage or gauze. Gently clean the wound and change the ointment and bandage once per day.Watch the area for signs of infection, like pain or redness and swelling. See your doctor if you suspect infection."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "stings",
+     {"tag": "stings",
      "patterns": ["How do you treat Sting?", "Stings", "What to do if you get a sting?", "Which medicine to apply if sting?"],
      "responses": ["Remove any stingers immediately. Some experts recommend scraping out the stinger with a credit card. Applying ice to the site may provide some mild relief. Apply ice for 20 minutes once every hour as needed. Wrap the ice in a towel or keep a cloth between the ice and skin to keep from freezing the skin. Taking an antihistamine such as diphenhydramine (Benadryl) or a nonsedating one such as loratadine (Claritin) will help with itching and swelling. Take acetaminophen (Tylenol) or ibuprofen (Motrin)for pain relief as needed. Wash the sting site with soap and water. Placing hydrocortisone cream on the sting can help relieve redness, itching, and swelling."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Splinter",
+     {"tag": "Splinter",
      "patterns": ["How to remove Splinters", "How to cure Splinters?", "What to do if I have splinters?", "How do you bring a splinter to the surface?"],
      "responses": ["1. SOAK IT IN EPSOM SALTS. Dissolve a cup of the salts into a warm bath and soak whatever part of the body has the splinter. Failing that, you can also put some of the salts onto a bandage pad and leave it covered for a day; this will eventually help bring the splinter to the surface. 2. VINEGAR OR OIL. Another simple way to draw out that stubborn splinter is to soak the affected area in oil (olive or corn) or white vinegar. Just pour some in a bowl and soak the area for around 20 to 30 minutes,"],
      "context_set": ""
-    },
+      },
 
-    {"tag": "Sprains",
+     {"tag": "Sprains",
      "patterns": ["How do you treat a sprain?", "what to do if i get a sprain?", "Which cream to apply if i get a sprain?", "Which medicine to apply if I get a sprain?"],
      "responses": ["Use an ice pack or ice slush bath immediately for 15 to 20 minutes and repeat every two to three hours while you're awake. To help stop swelling, compress the ankle with an elastic bandage until the swelling stops. In most cases, pain relievers — such as ibuprofen (Advil, Motrin IB, others) or naproxen sodium (Aleve, others) or acetaminophen (Tylenol, others) are enough to manage the pain of a sprained ankle."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Strains",
+     {"tag": "Strains",
      "patterns": ["How do you treat a strain?", "what to do if i get a strain?", "Which cream to apply if i get a strain?", "Which medicine to apply if I get a strain?", "How do you diagnose a strain?", "Is heat or ice better for a pulled muscle?"],
      "responses": ["Rest,Ice,Compression and Elevation can be used to cure strains. Avoid using your muscle for a few days, especially if movement causes an increase in pain and also Apply ice immediately after injuring your muscle. This will minimize swelling. Don’t put ice directly on your skin. Use an ice pack or wrap ice in a towel. To reduce swelling, wrap the affected area with an elastic bandage until swelling comes down."],
      "context_set": ""
-    },
+        },
 
-    {"tag": "Fever",
+        {"tag": "Fever",
      "patterns": ["How do you treat a mild Fever?", "what to do if i get a mild fever?", "Which medicine to take if I get a mild fever?", "fever"],
      "responses": ["To treat a fever at home: 1)Drink plenty of fluids to stay hydrated. 2)Dress in lightweight clothing. 3)Use a light blanket if you feel chilled, until the chills end. 4)Take acetaminophen (Tylenol, others) or ibuprofen (Advil, Motrin IB, others). 5) Get medical help if the fever lasts more than five days in a row."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Nasal Congestion",
+     {"tag": "Nasal Congestion",
      "patterns": ["How do you treat nasal Congestion?", "what to do if i get a nasal congestion?", "Which medicine to take if I have a nasal congestion?", "what to do if i have a blocked nose?", "How do you treat a blocked nose?", "How long does nasal congestion last?"],
      "responses": ["When you’re stuffed up, focus on keeping your nasal passages and sinuses moist. To keep your nasal passages moist, you can: 1)Use a humidifier or vaporizer. 2)Drink lots of fluids. This will thin out your mucus, which could help prevent blocked sinuses. 3)Place a warm, wet towel on your face. It may relieve discomfort and open your nasal passages."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Cough",
+     {"tag": "Cough",
      "patterns": ["How to cure cough?","How do you treat cough?", "what to do if i get a cough?", "Which medicine to take if I get cough?", "How do you get rid of cough?"],
      "responses": ["1) Honey:- Use honey to treat a cough, mix 2 teaspoons (tsp) with warm water or an herbal tea. Drink this mixture once or twice a day. Do not give honey to children under 1 year of age. 2) Ginger:- Brew up a soothing ginger tea by adding 20–40 grams (g) of fresh ginger slices to a cup of hot water. Allow to steep for a few minutes before drinking. Add honey or lemon juice to improve the taste and further soothe a cough. 3) Fluids:- Staying hydrated is vital for those with a cough or cold. Research indicates that drinking liquids at room temperature can alleviate a cough, runny nose, and sneezing."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Sore Throat",
+     {"tag": "Sore Throat",
      "patterns": ["How do you treat sore throat?", "what to do if i get a sore throat?", "Which medicine to take if I get a sore throat?", "How to cure sore throat?"],
      "responses": ["1) Make sure you get plenty of rest and drink a lot of fluids. 2)Inhale steam,Run hot water in a sink.Drape a towel over you to trap the steam, and have the person lean over the sink with the water running. Tell him to breathe deeply through his mouth and nose for 5 to 10 minutes. Repeat several times a day. 3)Have him sip chicken broth or warm tea with honey. Don’t give honey to a child under 12 months of age."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Gastrointestinal problems",
+     {"tag": "Gastrointestinal problems",
      "patterns": ["How do you treat gas problems?", "what to do if i have Gastrointestinal problems?", "Which medicine to take if I get gas problem?", "How to cure Gas problems?"],
      "responses": ["1) Replenish body fluids 2)Do not take antidiarrheal drugs or laxatives or pain medication, unless specified by a medical professional.3)Taking antacids may help, per recommendation of a healthcare professional. 4)If prone to frequent heartburns, seek medical help. 5)Taking meals that are not spicy regularly, can relieve ulcer pains. 6)Seek medical help, if conditions persist or continue to worsen"],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Skin problems",
+     {"tag": "Skin problems",
      "patterns": ["How do you treat Skin problems?", "what to do if i get a skin allergy?", "Which medicine to take if I get a skin allergy?", "How to cure skin allergy?"],
      "responses": ["1)Hydrocortisone cream. 2)Ointments like calamine lotion. 3)Antihistamines. 4)Cold compresses. 5)Oatmeal baths. 6)Talk to your doctor about what's best for your specific rash."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Abdonominal Pain",
+      {"tag": "Abdonominal Pain",
      "patterns": ["How do you treat Abdonominal Pain?", "what to do if i get a Abdonominal Pain?", "Which medicine to take if I get a Abdonominal Pain?", "How to cure Abdonominal Pain?"],
      "responses": ["1)Provide clear fluids to sip, such as water, broth, or fruit juice diluted with water. 2)Serve bland foods, such as saltine crackers, plain bread, dry toast, rice, gelatin, or applesauce. 3)Avoid spicy or greasy foods and caffeinated or carbonated drinks until 48 hours after all symptoms have gone away. "],
      "context_set": ""
-    },
+      },
 
-    {"tag": "Bruises",
+     {"tag": "Bruises",
      "patterns": ["How do you treat Bruises?", "what to do if i get a Bruise?", "Which medicine to take if I get a Bruise?", "How to cure Bruises?"],
      "responses": ["1)Ice the bruise with an ice pack wrapped in a towel. 2)Leave it in place for 10 to 20 minutes. 3)Repeat several times a day for a day or two as needed. 4)Compress the bruised area if it is swelling, using an elastic bandage. "],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Broken Toe",
+      {"tag": "Broken Toe",
      "patterns": ["How do you treat a Broken Toe?", "what to do if i get a Broken Toe?", "Which medicine to take if I get a Broken Toe?", "How to cure Broken Toe?"],
      "responses": ["1)To help decrease pain and swelling in a broken toe, elevate the foot, ice the injury, and stay off the foot. 2)Depending on the severity of the fracture, the toe may need to be put back into place (reduced), and some compound toe fractures may require surgery.3) Most broken toes heal without complications in six weeks."],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Choking",
+     {"tag": "Choking",
      "patterns": ["How do you treat Choking?", "what to do if i get a Choke?", "Which medicine to take if I get Choked?", "How to cure Choking?"],
      "responses": ["1)Encourage them to keep coughing to try to clear the blockage. 2)Ask them to try to spit out the object if it's in their mouth. 3)If coughing doesn't work, start back blows and Abdonominal thrusts"],
      "context_set": ""
-    },
+     },
 
-    {"tag": "Wound",
+     {"tag": "Wound",
      "patterns": ["How do you treat a wound?", "what to do if i get a Wound?", "Which medicine to take if I get wounded?", "How to cure a wound?"],
      "responses": ["1)Rinse the cut or wound with water and apply pressure with sterile gauze, a bandage, or a clean cloth. 2)If blood soaks through the bandage, place another bandage on top of the first and keep applying pressure. 3)Raise the injured body part to slow bleeding. 4)When bleeding stops, cover the wound with a new, clean bandage."],
      "context_set": ""
-    },
+     },
 
     {"tag": "Diarrhea",
      "patterns": ["How do you treat Diarrhea?", "what to do if i get Diarrhea?", "Which medicine to take if I get Diarrhea?", "How to cure Diarrhea?"],

@@ -10,10 +10,10 @@ from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 
 
-model = load_model("chatbot/chatbot_model.h5")
-intents = json.loads(open("chatbot/intents.json").read())
-words = pickle.load(open("chatbot/words.pkl", "rb"))
-classes = pickle.load(open("chatbot/classes.pkl", "rb"))
+model = load_model("medibot/chatbot/chatbot_model.h5")
+intents = json.loads(open("medibot/chatbot/intents.json").read())
+words = pickle.load(open("medibot/chatbot/words.pkl", "rb"))
+classes = pickle.load(open("medibot/chatbot/classes.pkl", "rb"))
 
 app = Flask(__name__)
 run_with_ngrok(app)  
